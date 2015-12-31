@@ -6,9 +6,7 @@ set fileencodings=utf-8,chinese,latin-1,gbk,ucs-bom,cp936
 set fileencoding=utf-8
 language messages zh_CN.utf-8
 
-"-------------------------------------------------------------------------------------------
 "解决菜单乱码
-"-------------------------------------------------------------------------------------------
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
@@ -17,15 +15,7 @@ source $VIMRUNTIME/menu.vim
 " ==========================================================================================
 :set number
 
-" ------------------------------------------------------------------------------------------
-" 启动的时候不显示那个援助乌干达儿童的提示
-" ------------------------------------------------------------------------------------------
-set shortmess=atI
-
-" ------------------------------------------------------------------------------------------
-" 不要图形按钮
-" ------------------------------------------------------------------------------------------
-"set go=
+set autowrite " 自动保存
 call pathogen#infect()
 set nocompatible
 let g:neocomplcache_enable_at_startup = 1
@@ -172,6 +162,7 @@ Bundle 'YankRing.vim'
 Bundle 'tagbar'
 Bundle 'JSON.vim'
 Bundle 'python_fold.vim'
+Plugin 'SuperTab'
 "补全空格
 Bundle 'AutoClose'
 "别人家的插件
